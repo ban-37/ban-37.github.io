@@ -1,0 +1,134 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+ /*插入一个整体字体*/
+ @font-face {
+  font-family: 'milkshakeregular';
+  src: url(../1-web-text/font/milkshake-webfont.woff2) format('woff2'),
+       url(../1-web-text/font/milkshake-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+/*字体设置*/
+  * {
+font-size: 10px;
+}
+body{
+  font-family: 'milkshakeregular';
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+}
+h1{
+  font-size: 3.5em;
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+h2{
+  font-size: 2em;
+}
+section p{
+  text-indent: 20px;
+}
+/*设置链接*/
+/*为了让前面文字的链接不那么突兀*/
+a{
+  color: #000;
+}
+a :link{
+  background-color: #a66;
+  text-decoration: underline greenyellow solid 1em/*不知道为什么没有*/
+}
+a :valid{
+  background-color: #a66;
+}
+a:focus{
+  background-color: #a66;
+  text-decoration: none;
+  outline: none
+  ;
+}
+a:hover{
+  background-color: #a66;
+  text-decoration: none;
+}
+a:active{
+  color: cadetblue;
+  background-color: chartreuse;
+}
+/*在链接右侧插入一张照片*/
+a[href*="https"]{
+  background-image: url(logo1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 16px 16px;
+  padding-right: 20px;
+}
+/*列表自定义图标设置*/
+ul{
+  list-style-type:circle
+}
+/*设置导航菜单*/
+nav ul {
+  line-height: 4;
+}
+nav ul a {
+  color: #000;
+  font-size: 2em;
+}
+/*各位置美化*/
+aside {
+  margin-top: 6em;
+}
+aside ul li {
+  line-height: 3;
+}
+aside p{
+  margin-left: 3.7em;
+}
+section p{
+  font-size: 1.5em;
+}

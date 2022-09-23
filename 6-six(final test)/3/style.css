@@ -1,0 +1,26 @@
+html {
+    font-family: sans-serif;
+    font: 10px;
+  }
+  p{
+    width: 200px;
+    height: 1px;
+    margin: 150px;
+    padding: 100px;
+    text-align:center;
+    font:2rem;/*网页原字高的倍数*/
+    background-color: chocolate;/*背景颜色*/
+    color: beige;
+    border-radius: 1em;/*圆角*/
+    border: 1px solid chocolate;
+    /*右下角的渐变*/
+    background-image: linear-gradient(to top left,rgba(0,0,0,0),rgba(16, 9, 9, 0.3)30%,rgba(16,9,9,0.3)100%);
+    /*盒子阴影*/
+    filter: drop-shadow(10px 10px 13px black);
+   /*标答
+    box-shadow: inset 2px 2px 2px rgba(255,255,255,0.5),
+                inset -2px -2px 2px rgba(0,0,0,0.5)
+                2px 2px 5px black;
+   */
+  }
+  /* Your CSS below here */

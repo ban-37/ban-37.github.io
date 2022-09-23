@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body{
+  margin: 0;
+  background: #ccc;
+   
+}
+
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+  /*让照片进盒子并且不重复且定位*//*linera-gradient是让背景渐变*/
+  background-image: url(top-image.png);/*让旧浏览器显示，新的直接覆盖了*/
+  background-image: linear-gradient(rgba(105, 105, 123, 0.5), rgba(240, 240, 235, 0.867),rgba(105,105,123,0.5)),url(top-image.png),url(bottom-image.png);
+  background-repeat: no-repeat;
+  background-position: bottom,top;/*之所以换位置是因为img加了三个元素，这只有两个所以重复运用就颠倒了*/
+  /*信纸边框的类型*/
+  border: 1mm solid pink;
+  
+}
+
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  /*加logo*/
+  background-image: url(logo.png);
+  /*给logo一个圆形阴影*/
+  /* filter: drop-shadow(3px 3px 3px black); */
+  border-radius: 64px;
+  box-shadow: 3px 3px 3px black;
+}
+
+
+
+/* Your CSS below here */
